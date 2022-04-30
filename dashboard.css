@@ -27,3 +27,16 @@ body {
 .CardTitle {
 	letter-spacing: 3px;
 }
+
+ul.no-bullet{
+	list-style-type: none;
+	padding: 0px;
+}
+
+.TodoCheckbox {
+	border-radius: 50%;
+}
+
+li {
+	margin-top: 0.5rem;
+}
