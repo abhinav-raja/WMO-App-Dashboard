@@ -6,6 +6,8 @@
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
@@ -13,33 +15,45 @@
 		<div class="row">
 			<div class="container col-lg-6 col-sm-12">
 				<div class="row">
-					<div class='col p-0'>
+					<div class='col p-2'>
 						<div class="d-flex align-items-center Card">
-							<div class="flex-fill">
-								Profile pic
+							<div class='flex-lg-fill d-flex justify-content-center'>
+								<img id='profilePic' src='profTest.png' class='mx-auto'>
 							</div>
 							<div class="flex-fill">
-								<p class="m-0"><span class="display-4"><b>28</b></span><span class="text-muted">April</span></p>
+								<div class='d-flex flex-column align-items-center'>
+									<span class="display-4"><b>28</b></span><span class="text-muted m-0 p-0">April</span>
+								</div>
 							</div>
 							<div class="flex-fill">
-								<p class="m-0"><span class="display-4"><b>5:45</b></span><span class="text-muted">PM</span></p>
+								<div class='d-flex flex-column align-items-center'>
+									<span class="display-4"><b>5:45</b></span><span class="text-muted">PM</span>
+								</div>
 							</div>
-							<div class="flex-fill">
-								<button class="m-1">+</button>
-								<button class="ml-1 mt-1 mb-1">o</button>
+							<div class="pl-2">
+								<button class="m-1 CircleButton d-block">
+									<div class='d-flex align-items-center justify-content-center'>
+										<span class='material-icons'>add</span>
+									</div>
+								</button>
+								<button class="ml-1 mt-1 mb-1 CircleButton d-block">
+									<div class='d-flex align-items-center justify-content-center'>
+										<span class='material-icons'>settings</span>
+									</div>
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class='col p-0'>
+					<div class='col p-2'>
 						<div class='Card'>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation 
 						</div>
 					</div>
-					<div class='col p-0'>
+					<div class='col p-2'>
 						<div class="Card">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enimd minim veniam,
@@ -48,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-			<div class='col-lg-6 col-sm-12 p-0'>
+			<div class='col-lg-6 col-sm-12 p-2'>
 				<div class="Card">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -60,7 +74,7 @@
 			</div>
 		</div>
 		<div class='row'>
-			<div class='col-sm-12 col-lg-4 p-0'>
+			<div class='col-sm-12 col-lg-4 p-2'>
 				<div class="Card">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -70,7 +84,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
-			<div class='col-sm-12 col-lg-8 p-0'>
+			<div class='col-sm-12 col-lg-8 p-2'>
 				<div class='Card'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -9,3 +9,17 @@ body {
 	width:  100%;
 	height:  100%;
 }
+
+.CircleButton {
+	width:  2.5rem;
+	height:  2.5rem;
+	border-radius:  50%;
+	border:  none;
+	box-shadow:  none;
+}
+
+#profilePic {
+	width:  6rem;
+	height:  6rem;
+	border-radius:  50%;
+}
