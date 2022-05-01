@@ -18,6 +18,19 @@ body {
 	box-shadow:  none;
 }
 
+.CircleDate {
+	width:  1.5rem;
+	height:  1.5rem;
+	border-radius: 50%;
+	background-color: #ffd700;
+	color:  white;
+}
+
+.Sundays {
+	width:  2rem;
+	border-radius: 1rem;
+	background-color: #3dffd3;
+}
 #profilePic {
 	width:  6rem;
 	height:  6rem;
