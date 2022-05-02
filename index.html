@@ -18,16 +18,16 @@
 					<div class='col p-2'>
 						<div class="d-flex align-items-center Card">
 							<div class='flex-lg-fill d-flex justify-content-center'>
-								<img id='profilePic' src='profTest.png' class='mx-auto'>
+								<img id='profilePic' src='profPic.png' class='mx-auto'>
 							</div>
 							<div class="flex-fill">
 								<div class='d-flex flex-column align-items-center'>
-									<span class="display-4 color-orange"><b>28</b></span><span class="text-muted m-0 p-0">April</span>
+									<span class="display-4 color-orange"><b>3</b></span><span class="text-muted m-0 p-0">May</span>
 								</div>
 							</div>
 							<div class="flex-fill">
 								<div class='d-flex flex-column align-items-center'>
-									<span class="display-4 color-orange"><b>5:45</b></span><span class="text-muted">PM</span>
+									<span class="display-4 color-orange"><b>5:47</b></span><span class="text-muted">PM</span>
 								</div>
 							</div>
 							<div class="pl-2">
@@ -51,7 +51,7 @@
 							<b class='CardTitle'>TO DO</b>
 							<ul class='no-bullet'>
 								<li>
-									<input type='checkbox' class='TodoCheckbox mr-2'></input><span>Pick up Laundry</span>
+									<input type='checkbox' class='TodoCheckbox mr-2'></input><span>Do laundry</span>
 								</li>
 								<li>
 									<input type='checkbox' class='TodoCheckbox mr-2'></input><span>Finish WMO App</span>
@@ -61,7 +61,7 @@
 								</li>
 							</ul>
 							<div class='d-flex flex-row justify-content-around'>
-								<button class="CircleButton color-dark-blue">
+								<button class="CircleButton color-green">
 									<div class='d-flex align-items-center justify-content-center'>
 										<span class='material-icons'>add</span>
 									</div>
@@ -78,7 +78,10 @@
 						<div class="Card">
 							<b class='CardTitle'>BUDGET</b>
 							<div class='d-flex flex-column align-items-center'>
-								<div id='budgetLine' class='w-100 mt-2'></div>
+								<div id='budgetLine' class='w-100 position-relative my-2'>
+									<div class='lineBack w-100 h-100 position-absolute bg-green'></div>
+									<div class='lineFront h-100 position-absolute bg-red'></div>
+								</div>
 								<div class='d-flex flex-row justify-content-between align-items-center w-100'>
 									<div>
 										<p class='m-0 h2 color-red'>2000</p>
@@ -117,9 +120,7 @@
 							</div>
 							<div class='col d-flex flex-column align-items-center'>
 								<b class='m-0'>M</b>
-								<div class='CircleDate bg-orange d-flex justify-content-center align-items-center mb-1'>
-									<p class='m-0'>2</p>
-								</div>
+								<p class='m-0'>2</p>
 								<p class='mb-1'>9</p>
 								<p class='mb-1'>16</p>
 								<p class='mb-1'>23</p>
@@ -127,7 +128,9 @@
 							</div>
 							<div class='col d-flex flex-column align-items-center'>
 								<b class='m-0'>T</b>
-								<p class='mb-1'>3</p>
+								<div class='CircleDate bg-orange d-flex justify-content-center align-items-center mb-1'>
+									<p class='mb-1'>3</p>
+								</div>
 								<p class='mb-1'>10</p>
 								<p class='mb-1'>17</p>
 								<p class='mb-1'>24</p>
@@ -167,7 +170,7 @@
 								<p class='text-muted m-0'>Today</p>
 								<ul class='no-bullet'>
 									<li><span class='color-red bg-red px-1 rounded m-0'>5:00PM</span> App deadline</li>
-									<li><span class='color-dark-blue bg-dark-blue px-1 rounded m-0'>7:30PM</span> Fundae session</li>
+									<li><span class='color-light-blue bg-light-blue px-1 rounded m-0'>7:30PM</span> Fundae session</li>
 								</ul>
 							</div>
 							<div class='col'>
@@ -200,8 +203,8 @@
 							<span class='material-icons'>chat</span>
 						</div>
 						<div class='d-flex flex-column justify-content-center'>
-							<p class='m-0'>Arsene</p>
-							<p class='m-0 text-muted'>Hi, you free?</p>
+							<p class='m-0'>Newton</p>
+							<p class='m-0 text-muted'>How to do physics p5?</p>
 						</div>
 					</div>
 				</div>
@@ -212,14 +215,17 @@
 					<div class='container'>
 						<div class='row'>
 							<div class="col">
-								<div id='walkLine' class='w-100'></div>
+								<div id='walkLine' class='w-100 position-relative habitLine my-2'>
+									<div class='lineBack w-100 h-100 position-absolute'></div>
+									<div class='lineFront h-100 position-absolute bg-light-blue'></div>
+								</div>
 								<p class='m-0 h2'>Walking</p>
-								<div class='d-flex flex-row justify-content-between align-items-center'>
+								<div class='d-flex flex-row'>
 									<div>
 										<span class='small color-light-blue bg-light-blue p-1 rounded m-0 py-0'>DAILY</span>
-										<p class='text-muted m-0'>3k of 9k steps</p>
+										<p class='text-muted m-0'>3k/9k steps</p>
 									</div>
-									<button class="CircleButton color-light-blue">
+									<button class="CircleButton color-light-blue mx-2">
 									<div class='d-flex align-items-center justify-content-center'>
 										<span class='material-icons'>add</span>
 									</div>
@@ -227,14 +233,17 @@
 								</div>
 							</div>
 							<div class="col">
-								<div id='waterLine' class='w-100'></div>
+								<div id='waterLine' class='w-100 position-relative habitLine my-2'>
+									<div class='lineBack w-100 h-100 position-absolute'></div>
+									<div class='lineFront h-100 position-absolute bg-light-blue'></div>
+								</div>
 								<p class='m-0 h2'>Water</p>
-								<div class='d-flex flex-row justify-content-between align-items-center'>
+								<div class='d-flex flex-row'>
 									<div>
 										<span class='small color-light-blue bg-light-blue p-1 rounded m-0 py-0'>DAILY</span>
-										<p class='text-muted m-0'>4 of 8 times</p>
+										<p class='text-muted m-0'>4/8 times</p>
 									</div>
-									<button class="CircleButton color-light-blue">
+									<button class="CircleButton color-light-blue mx-2">
 									<div class='d-flex align-items-center justify-content-center'>
 										<span class='material-icons'>add</span>
 									</div>
@@ -242,14 +251,17 @@
 								</div>
 							</div>
 							<div class="col">
-								<div id='codingLine' class='w-100'></div>
+								<div id='codingLine' class='w-100 position-relative habitLine my-2'>
+									<div class='lineBack w-100 h-100 position-absolute'></div>
+									<div class='lineFront h-100 position-absolute bg-orange'></div>
+								</div>
 								<p class='m-0 h2'>Coding</p>
-								<div class='d-flex flex-row justify-content-between align-items-center'>
+								<div class='d-flex flex-row'>
 									<div>
 										<span class='small color-orange bg-orange p-1 rounded m-0 py-0'>WEEKLY</span>
-										<p class='text-muted m-0'>3 of 5 times</p>
+										<p class='text-muted m-0'>3/5 times</p>
 									</div>
-									<button class="CircleButton color-orange">
+									<button class="CircleButton color-orange mx-2">
 									<div class='d-flex align-items-center justify-content-center'>
 										<span class='material-icons'>add</span>
 									</div>
@@ -257,14 +269,17 @@
 								</div>
 							</div>
 							<div class="col">
-								<div id='studyLine' class='w-100'></div>
+								<div id='studyLine' class='w-100 position-relative habitLine my-2'>
+									<div class='lineBack w-100 h-100 position-absolute'></div>
+									<div class='lineFront h-100 position-absolute bg-orange'></div>
+								</div>
 								<p class='m-0 h2'>Studying</p>
-								<div class='d-flex flex-row justify-content-between align-items-center'>
+								<div class='d-flex flex-row'>
 									<div>
 										<span class='small color-orange bg-orange p-1 rounded m-0 py-0'>WEEKLY</span>
-										<p class='text-muted m-0'>6 of 7 times</p>
+										<p class='text-muted m-0'>6/7 times</p>
 									</div>
-									<button class="CircleButton color-orange">
+									<button class="CircleButton color-orange mx-2">
 									<div class='d-flex align-items-center justify-content-center'>
 										<span class='material-icons'>add</span>
 									</div>
@@ -280,7 +295,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js"></script>
 	<script src="dashboard.js"></script>
 </body>
 </html>
