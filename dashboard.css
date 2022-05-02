@@ -1,29 +1,57 @@
 body {
 	font-family: Montserrat, sans-serif;
+	background-color: #efefff;
 }
 
 .Card {
 	padding: 1rem;
-	border:  2px solid gray;
+	/*border:  2px solid gray;*/
 	border-radius: 10px;
 	width:  100%;
 	height:  100%;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+	background-color: white;
 }
 
 .CircleButton {
 	width:  2.5rem;
 	height:  2.5rem;
 	border-radius:  50%;
+	border:  1px solid rgba(0,0,0,0.1);
+	background-color: white;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	transition:  all 0.5s;
+}
+
+.CircleButton:hover {
+	color:  white;
 	border:  none;
-	box-shadow:  none;
+}
+
+.CircleButton.color-light-blue:hover {
+	background-color: rgb(57,160,237);
+}
+
+.CircleButton.color-orange:hover {
+	background-color: rgb(255,125,0);
+}
+
+.CircleButton.color-green:hover {
+	background-color: rgb(47,191,113);
+}
+
+.CircleButton.color-red:hover {
+	background-color: rgb(239,45,86);
+}
+
+.CircleButton.color-dark-blue:hover {
+	background-color: rgb(61,52,139);
 }
 
 .CircleDate {
 	width:  1.5rem;
 	height:  1.5rem;
 	border-radius: 50%;
-	background-color: #ffd700;
-	color:  white;
 }
 
 .CircleNotif {
@@ -35,7 +63,6 @@ body {
 .Sundays {
 	width:  2rem;
 	border-radius: 1rem;
-	background-color: #3dffd3;
 }
 #profilePic {
 	width:  6rem;
@@ -60,3 +87,51 @@ li {
 	margin-top: 0.5rem;
 }
 
+.color-green {
+	color:  rgb(47,191,113);
+}
+
+.bg-green {
+	background-color: rgba(47,191,113, 0.2);
+}
+
+.color-red {
+	color:  rgb(239,45,86);
+}
+
+.bg-red {
+	background-color: rgba(239,45,86, 0.2);
+}
+
+.color-orange {
+	color: rgb(255,125,0);
+}
+
+.bg-orange {
+	background-color: rgba(255,125,0,0.2);
+}
+
+.color-dark-blue {
+	color: rgb(61,52,139);
+}
+
+.bg-dark-blue {
+	background-color: rgba(61,52,139,0.2);
+}
+
+.color-light-blue {
+	color: rgb(57,160,237);
+}
+
+.bg-light-blue {
+	background-color: rgba(57,160,237,0.2);
+}
+
+.Notification {
+	/*box-shadow: 0px 0px 15px rgba(0,0,0,0.1);*/
+	transition:  all 0.5s;
+}
+
+.Notification:hover {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
