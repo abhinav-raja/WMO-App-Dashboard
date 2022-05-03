@@ -1,4 +1,4 @@
-# WMO-App
+# WMO-App-Dashboard
 Dashboard created for WMO Manager Applications 2022. Made using Bootstrap.
 
 Displays the following features (none are interactive yet):
